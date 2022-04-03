@@ -2,7 +2,6 @@
   <div>
     <div>
       helloworld
-      test push
     </div>
   </div>
 </template>
