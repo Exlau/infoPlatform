@@ -49,8 +49,7 @@ export default {
       this.videoListToShow = searchList;
     },
     serachVideoOnChange() {
-      console.log(this.searchKey);
-      return debounce(this.searchVideo, 500);
+      debounce(this.searchVideo, 1000)();
     },
   },
   mounted() {
