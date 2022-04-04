@@ -1,14 +1,21 @@
 <template>
   <div class="video-container">
     <div class="search-bar">
-      <input
+      <el-input
+        class="search-input"
         type="text"
         placeholder="搜索视频"
         v-model="searchKey"
         @input="serachVideoOnChange($event)"
         @keyup.enter="searchVideo"
-      />
-      <button @click="searchVideo">搜索</button>
+      ></el-input>
+      <el-button
+        class="search-btn"
+        icon="el-icon-search"
+        type="primary"
+        circle
+        @click="searchVideo"
+      ></el-button>
     </div>
     <div class="video-card-container">
       <VideoCard
@@ -49,7 +56,7 @@ export default {
       this.videoListToShow = searchList;
     },
     serachVideoOnChange() {
-      debounce(this.searchVideo, 1000)();
+      debounce(this.searchVideo, 700)();
     },
   },
   mounted() {
@@ -65,6 +72,12 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
+  }
+  .search-input {
+    width: 300px;
+  }
+  .search-btn {
+    margin-left: 20px;
   }
 }
 </style>
