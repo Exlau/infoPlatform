@@ -7,4 +7,5 @@ module.exports = {
       .set("@/", path.resolve(__dirname, "src/"))
       .set("~/", path.resolve(__dirname));
   },
+  publicPath: "./",
 };
