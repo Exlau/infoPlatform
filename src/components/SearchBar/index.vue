@@ -1,7 +1,5 @@
 <template>
-  <div class="search-bar">
-    <el-input></el-input>
-  </div>
+  <div class="search-bar"></div>
 </template>
 
 <script>
