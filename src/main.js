@@ -2,7 +2,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import { Swipe, SwipeItem } from 'vant';
-
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 

@@ -53,7 +53,18 @@
         </div>
         <div class="VideoPortal-page HomePage">
           <!-- Home page container -->
-          <div class="SpotLight-container" style="height: 40px"></div>
+          <div class="SpotLight-container" style="height: 40px">
+            <swiper
+                :slides-per-view="3"
+                :space-between="50"
+                @swiper="onSwiper"
+                @slideChange="onSlideChange"
+            >
+              <swiper-slide style="background:red">1</swiper-slide>
+              <swiper-slide style="background:red">2</swiper-slide>
+              <swiper-slide style="background:red">3</swiper-slide>
+            </swiper>
+          </div>
 
           <!-- Home page content -->
           <div class="HomePage-content u-contentCenter">
