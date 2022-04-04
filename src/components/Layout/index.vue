@@ -53,16 +53,34 @@
         </div>
         <div class="VideoPortal-page HomePage">
           <!-- Home page container -->
-          <div class="SpotLight-container" style="height: 40px">
+          <div class="SpotLight-container">
             <swiper
-                :slides-per-view="3"
-                :space-between="50"
+                :options="swiperOption"
                 @swiper="onSwiper"
                 @slideChange="onSlideChange"
+                style="width: 100%;padding-top: 30px;padding-bottom: 30px;"
             >
-              <swiper-slide style="background:red">1</swiper-slide>
-              <swiper-slide style="background:red">2</swiper-slide>
-              <swiper-slide style="background:red">3</swiper-slide>
+              <swiper-slide style="background-position: center;background-size: cover;width: 320px;background-color: #fff;overflow: hidden;border-radius: 8px;">
+                <div class="picture">
+                <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80" alt="">
+                </div>
+                </swiper-slide>
+              <swiper-slide style="background-position: center;background-size: cover;width: 320px;background-color: #fff;overflow: hidden;border-radius: 8px;"><div class="picture">
+                <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80" alt="">
+                </div></swiper-slide>
+              <swiper-slide style="background-position: center;background-size: cover;width: 320px;background-color: #fff;overflow: hidden;border-radius: 8px;"><div class="picture">
+                <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80" alt="">
+                </div></swiper-slide>
+              <swiper-slide style="background-position: center;background-size: cover;width: 320px;background-color: #fff;overflow: hidden;border-radius: 8px;">
+                <div class="picture">
+                <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80" alt="">
+                </div>
+                </swiper-slide>
+              <swiper-slide style="background-position: center;background-size: cover;width: 320px;background-color: #fff;overflow: hidden;border-radius: 8px;">
+                <div class="picture">
+                <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80" alt="">
+                </div>
+                </swiper-slide>
             </swiper>
           </div>
 
@@ -136,10 +154,34 @@ export default defineComponent({
   components: {
     VideoContainer,
   },
+  data(){
+    return{
+      swiperOption:{
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 350,
+          modifier: 1,
+          slideShadows: true
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      }
+    }
+  }
 });
 </script>
 
 <style scoped>
+.picture {
+  width: 320px;
+  height: 320px;
+  overflow: hidden;}
 .ms-Breadcrumb {
   margin: 23px 0 1px 0;
 }
