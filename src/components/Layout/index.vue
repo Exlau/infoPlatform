@@ -56,8 +56,6 @@
           <div class="SpotLight-container">
             <swiper
                 :options="swiperOption"
-                @swiper="onSwiper"
-                @slideChange="onSlideChange"
                 style="width: 100%;padding-top: 30px;padding-bottom: 30px;"
             >
               <swiper-slide style="background-position: center;background-size: cover;width: 320px;background-color: #fff;overflow: hidden;border-radius: 8px;">
@@ -157,6 +155,8 @@ export default defineComponent({
   data(){
     return{
       swiperOption:{
+        autoplay:5000,
+        speed:1000,
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
