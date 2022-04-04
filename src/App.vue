@@ -31,47 +31,52 @@
             </div>
             <div class="VideoPortal-page HomePage">
                 <!-- Home page container -->
-                <div class="SpotLight-container" style="height:40px">
+                <div class="SpotLight-container">
+                    <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+                    <van-swipe-item>1</van-swipe-item>
+                    <van-swipe-item>2</van-swipe-item>
+                    <van-swipe-item>3</van-swipe-item>
+                    <van-swipe-item>4</van-swipe-item>
+                </van-swipe>
                 </div>
 
-                <!-- Home page content -->
-                <div class="HomePage-content u-contentCenter">
-                    <div class="HomePage-contentCell">
-                        <!-- List of channel groups -->
-                        <div class="ChannelList">
-                            <!-- List of Popular videos -->
-                            <div class="ChannelList-item">
-                                <h3 class="ChannelList-title" style="border-color: #dc0606">
-                                    <a href="channel.html">
-                                        <span class="ChannelList-titleText ms-font-xl">Popular</span><span class="ms-font-l ms-fontColor-themePrimary ms-fontColor-themeDark-hover">See all videos</span>
-                                    </a>
-                                </h3>
-
-                                <!-- Use the responsive grid to both arrange individual video items,
-                       as well as the text and images within individual items.
-                   -->
-            <div class="ChannelList-videos ms-Grid">
-                <div class="ms-Grid-row">
-                    <div class="VideoList-item ms-Grid-col ms-Grid ms-u-sm12 ms-u-md6 ms-u-lg4 ms-u-xl3">
-                        <!-- <div class="ms-Grid-row">
-                            <div class="VideoList-thumb ms-Grid-col ms-u-sm12 ms-u-lg12">
-                                <a href="https://www.baidu.com/" class="VideoList-thumbLink">
-                                    <img class="VideoList-thumbImg" src="http://lorempixel.com/300/168/business/1" alt="Video Title">
-                                    <span class="VideoList-thumbCaption">10:45</span>
+            <!-- Home page content -->
+            <div class="HomePage-content u-contentCenter">
+                <div class="HomePage-contentCell">
+                    <!-- List of channel groups -->
+                    <div class="ChannelList">
+                        <!-- List of Popular videos -->
+                        <div class="ChannelList-item">
+                            <h3 class="ChannelList-title" style="border-color: #dc0606">
+                                <a href="channel.html">
+                                    <span class="ChannelList-titleText ms-font-xl">Popular</span><span class="ms-font-l ms-fontColor-themePrimary ms-fontColor-themeDark-hover">See all videos</span>
                                 </a>
-                            </div>
-                            <div class="VideoList-text ms-Grid-col ms-u-sm12 ms-u-lg12">
-                                <a href="player.html"><span class="VideoList-title ms-font-m-plus" title="Seamlessly visualize quality intellectual capital ">Seamlessly visualize quality intellectual capital </span></a>
-                                <span class="VideoList-viewCount ms-font-s-plus ms-fontColor-neutralSecondaryAlt">345 views</span>
-                            </div>
-                        </div> -->
-                        <layout/>
-                    </div>
+                            </h3>
 
-                    
-                </div>
-            </div>
+                            <!-- Use the responsive grid to both arrange individual video items,
+                    as well as the text and images within individual items.
+                -->
+                
+                    <div class="ChannelList-videos ms-Grid">
+                        <div class="ms-Grid-row">
+                            <div class="VideoList-item ms-Grid-col ms-Grid ms-u-sm12 ms-u-md6 ms-u-lg4 ms-u-xl3">
+                                <!-- <div class="ms-Grid-row">
+                                    <div class="VideoList-thumb ms-Grid-col ms-u-sm12 ms-u-lg12">
+                                        <a href="https://www.baidu.com/" class="VideoList-thumbLink">
+                                            <img class="VideoList-thumbImg" src="http://lorempixel.com/300/168/business/1" alt="Video Title">
+                                            <span class="VideoList-thumbCaption">10:45</span>
+                                        </a>
+                                    </div>
+                                    <div class="VideoList-text ms-Grid-col ms-u-sm12 ms-u-lg12">
+                                        <a href="player.html"><span class="VideoList-title ms-font-m-plus" title="Seamlessly visualize quality intellectual capital ">Seamlessly visualize quality intellectual capital </span></a>
+                                        <span class="VideoList-viewCount ms-font-s-plus ms-fontColor-neutralSecondaryAlt">345 views</span>
+                                    </div>
+                                </div> -->
+                                <Layout/>
                             </div>
+                        </div>
+                    </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -90,6 +95,13 @@ export default {
 };
 </script>
 <style>
+        .my-swipe .van-swipe-item {
+            color: #fff;
+            font-size: 20px;
+            line-height: 150px;
+            text-align: center;
+            background-color: #39a9ed;
+        }
         .ms-Breadcrumb {
             margin: 23px 0 1px 0;
         }

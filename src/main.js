@@ -1,7 +1,10 @@
 // 引入Vue和App
 import Vue from 'vue'
 import App from './App.vue'
+import { Swipe, SwipeItem } from 'vant';
 
+Vue.use(Swipe);
+Vue.use(SwipeItem);
 
 Vue.config.productionTip = false // 关闭Vue的生产提示
 
