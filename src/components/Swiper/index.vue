@@ -18,7 +18,8 @@
         <VideoCard
           title="那些无法超越的台词与画面！"
           src="https://www.bilibili.com/video/BV1y34y1s7x7?spm_id_from=333.851.b_7265636f6d6d656e64.3"
-          imgSrc="tiger"
+          imgSrc="test"
+          styles="width:320px;height:auto;text-align:center;"
         />
       </div>
     </swiper-slide>
@@ -32,12 +33,12 @@
         border-radius: 8px;
       "
       ><div class="picture">
-        <img
-          src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-          alt=""
-          style="width: 100%"
+        <VideoCard
+          title="那些无法超越的台词与画面！"
+          src="https://www.bilibili.com/video/BV1y34y1s7x7?spm_id_from=333.851.b_7265636f6d6d656e64.3"
+          imgSrc="test"
+          styles="width:320px;height:auto;text-align:center"
         />
-        <h3 class="title">Kelly Woods</h3>
       </div></swiper-slide
     >
     <swiper-slide
@@ -50,12 +51,12 @@
         border-radius: 8px;
       "
       ><div class="picture">
-        <img
-          src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-          alt=""
-          style="width: 100%"
+        <VideoCard
+          title="那些无法超越的台词与画面！"
+          src="https://www.bilibili.com/video/BV1y34y1s7x7?spm_id_from=333.851.b_7265636f6d6d656e64.3"
+          imgSrc="test"
+          styles="width:320px;height:auto;text-align:center"
         />
-        <h3 class="title">Kelly Woods</h3>
       </div></swiper-slide
     >
     <swiper-slide
@@ -69,12 +70,12 @@
       "
     >
       <div class="picture">
-        <img
-          src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-          alt=""
-          style="width: 100%"
+        <VideoCard
+          title="那些无法超越的台词与画面！"
+          src="https://www.bilibili.com/video/BV1y34y1s7x7?spm_id_from=333.851.b_7265636f6d6d656e64.3"
+          imgSrc="test"
+          styles="width:320px;height:auto;text-align:center"
         />
-        <h3 class="title">Kelly Woods</h3>
       </div>
     </swiper-slide>
     <swiper-slide
@@ -88,14 +89,12 @@
       "
     >
       <div class="picture">
-        <img
-          src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-          alt=""
-          style="width: 100%"
+        <VideoCard
+          title="那些无法超越的台词与画面！"
+          src="https://www.bilibili.com/video/BV1y34y1s7x7?spm_id_from=333.851.b_7265636f6d6d656e64.3"
+          imgSrc="test"
+          styles="width:320px;height:auto;text-align:center"
         />
-        <h3 class="title">
-          sssssssssssssssssssssssssssssssssssssssssssssssssssss
-        </h3>
       </div>
     </swiper-slide>
   </swiper>
@@ -142,4 +141,21 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.title {
+  position: absolute;
+  top: 270px;
+  width: 320px;
+  overflow: hidden;
+  text-align: center;
+}
+.detail {
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.picture {
+  width: 320px;
+  overflow: hidden;
+  background: #e2ebf0;
+}
 </style>

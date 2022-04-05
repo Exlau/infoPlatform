@@ -1,5 +1,5 @@
 <template>
-  <div class="video-card" @click="handleCardClick">
+  <div class="video-card" @click="handleCardClick" :style="styles">
     <img
       class="video-img"
       :src="require('../../assets/' + $props.imgSrc + '.jpg')"
@@ -20,6 +20,7 @@ export default {
     title: String,
     src: String,
     imgSrc: String,
+    styles:Object,
   },
   methods: {
     handleCardClick() {
