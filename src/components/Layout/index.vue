@@ -57,7 +57,7 @@
             <swiper
               :options="swiperOption"
               @slideChange="onSlideChange"
-              style="width: 100%; padding-top: 30px; padding-bottom: 30px"
+              style="width: 60%; padding-top: 30px; padding-bottom: 30px"
             >
               <swiper-slide
                 style="
@@ -70,10 +70,15 @@
                 "
               >
                 <div class="picture">
+                  <a href="https://www.bilibili.com/video/BV1y34y1s7x7?spm_id_from=333.851.b_7265636f6d6d656e64.3">
                   <img
                     src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
                     alt=""
+                    style="width:100%"
                   />
+                    <h3 class="title">那些无法超越的台词与画面！</h3>
+                  </a>
+                  
                 </div>
               </swiper-slide>
               <swiper-slide
@@ -89,7 +94,9 @@
                   <img
                     src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
                     alt=""
-                  /></div
+                    style="width:100%"
+                  />
+                  <h3 class="title">Kelly Woods</h3></div
               ></swiper-slide>
               <swiper-slide
                 style="
@@ -104,7 +111,9 @@
                   <img
                     src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
                     alt=""
-                  /></div
+                    style="width:100%"
+                  />
+                  <h3 class="title">Kelly Woods</h3></div
               ></swiper-slide>
               <swiper-slide
                 style="
@@ -120,7 +129,9 @@
                   <img
                     src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
                     alt=""
+                    style="width:100%"
                   />
+                  <h3 class="title">Kelly Woods</h3>
                 </div>
               </swiper-slide>
               <swiper-slide
@@ -137,7 +148,9 @@
                   <img
                     src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
                     alt=""
+                    style="width:100%"
                   />
+                  <h3 class="title">sssssssssssssssssssssssssssssssssssssssssssssssssssss</h3>
                 </div>
               </swiper-slide>
             </swiper>
@@ -227,7 +240,9 @@ export default defineComponent({
           modifier: 1,
           slideShadows: true,
         },
-        autoplay: true,
+        autoplay:{
+        delay: 1000,
+        },
         autoplayDisableOnInteraction: false,
         pagination: {
           el: ".swiper-pagination",
@@ -244,6 +259,17 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.title{
+  position: absolute;
+  top: 270px;
+  width: 320px;
+  overflow: hidden;
+  text-align: center;
+}
+.detail {
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;}
 .picture {
   width: 320px;
   height: 320px;
