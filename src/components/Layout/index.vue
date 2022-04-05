@@ -93,18 +93,6 @@
                           ms-u-xl3
                         "
                       >
-                        <!-- <div class="ms-Grid-row">
-                            <div class="VideoList-thumb ms-Grid-col ms-u-sm12 ms-u-lg12">
-                                <a href="https://www.baidu.com/" class="VideoList-thumbLink">
-                                    <img class="VideoList-thumbImg" src="http://lorempixel.com/300/168/business/1" alt="Video Title">
-                                    <span class="VideoList-thumbCaption">10:45</span>
-                                </a>
-                            </div>
-                            <div class="VideoList-text ms-Grid-col ms-u-sm12 ms-u-lg12">
-                                <a href="player.html"><span class="VideoList-title ms-font-m-plus" title="Seamlessly visualize quality intellectual capital ">Seamlessly visualize quality intellectual capital </span></a>
-                                <span class="VideoList-viewCount ms-font-s-plus ms-fontColor-neutralSecondaryAlt">345 views</span>
-                            </div>
-                        </div> -->
                       </div>
                     </div>
                   </div>
