@@ -54,106 +54,7 @@
         <div class="VideoPortal-page HomePage">
           <!-- Home page container -->
           <div class="SpotLight-container">
-            <swiper
-              :options="swiperOption"
-              @slideChange="onSlideChange"
-              style="width: 60%; padding-top: 30px; padding-bottom: 30px"
-            >
-              <swiper-slide
-                style="
-                  background-position: center;
-                  background-size: cover;
-                  width: 320px;
-                  background-color: #fff;
-                  overflow: hidden;
-                  border-radius: 8px;
-                "
-              >
-                <div class="picture">
-                  <a href="https://www.bilibili.com/video/BV1y34y1s7x7?spm_id_from=333.851.b_7265636f6d6d656e64.3">
-                  <img
-                    src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-                    alt=""
-                    style="width:100%"
-                  />
-                    <h3 class="title">那些无法超越的台词与画面！</h3>
-                  </a>
-                  
-                </div>
-              </swiper-slide>
-              <swiper-slide
-                style="
-                  background-position: center;
-                  background-size: cover;
-                  width: 320px;
-                  background-color: #fff;
-                  overflow: hidden;
-                  border-radius: 8px;
-                "
-                ><div class="picture">
-                  <img
-                    src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-                    alt=""
-                    style="width:100%"
-                  />
-                  <h3 class="title">Kelly Woods</h3></div
-              ></swiper-slide>
-              <swiper-slide
-                style="
-                  background-position: center;
-                  background-size: cover;
-                  width: 320px;
-                  background-color: #fff;
-                  overflow: hidden;
-                  border-radius: 8px;
-                "
-                ><div class="picture">
-                  <img
-                    src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-                    alt=""
-                    style="width:100%"
-                  />
-                  <h3 class="title">Kelly Woods</h3></div
-              ></swiper-slide>
-              <swiper-slide
-                style="
-                  background-position: center;
-                  background-size: cover;
-                  width: 320px;
-                  background-color: #fff;
-                  overflow: hidden;
-                  border-radius: 8px;
-                "
-              >
-                <div class="picture">
-                  <img
-                    src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-                    alt=""
-                    style="width:100%"
-                  />
-                  <h3 class="title">Kelly Woods</h3>
-                </div>
-              </swiper-slide>
-              <swiper-slide
-                style="
-                  background-position: center;
-                  background-size: cover;
-                  width: 320px;
-                  background-color: #fff;
-                  overflow: hidden;
-                  border-radius: 8px;
-                "
-              >
-                <div class="picture">
-                  <img
-                    src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-                    alt=""
-                    style="width:100%"
-                  />
-                  <h3 class="title">sssssssssssssssssssssssssssssssssssssssssssssssssssss</h3>
-                </div>
-              </swiper-slide>
-            </swiper>
+            <IndexSwiper />
           </div>
 
           <!-- Home page content -->
@@ -220,46 +121,19 @@
 <script>
 import { defineComponent } from "@vue/composition-api";
 import VideoContainer from "../VideoContainer/index.vue";
+import IndexSwiper from "../Swiper/index.vue";
 
 export default defineComponent({
   name: "Layout",
   components: {
     VideoContainer,
-  },
-  data() {
-    return {
-      swiperOption: {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 20,
-          stretch: 0,
-          depth: 350,
-          modifier: 1,
-          slideShadows: true,
-        },
-        autoplay:{
-        delay: 1000,
-        },
-        autoplayDisableOnInteraction: false,
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      },
-    };
-  },
-  methods: {
-    onSlideChange() {
-      console.log("silde change");
-    },
+    IndexSwiper,
   },
 });
 </script>
 
 <style scoped>
-.title{
+.title {
   position: absolute;
   top: 270px;
   width: 320px;
@@ -269,7 +143,8 @@ export default defineComponent({
 .detail {
   padding: 25px 20px;
   font-weight: 600;
-  text-align: center;}
+  text-align: center;
+}
 .picture {
   width: 320px;
   height: 320px;
