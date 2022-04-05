@@ -56,12 +56,11 @@ export default {
       searchKey: "",
       categoryList: [],
       currentCategory: "",
-      activeName: "second",
+      activeName: "全部",
     };
   },
   watch: {
     currentCategory: function () {
-      console.log("this.cuir", this.currentCategory);
       this.searchVideo();
     },
   },
@@ -106,7 +105,7 @@ export default {
   .video-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 20px;
   }
   .search-input {
